@@ -3,7 +3,7 @@
 This repository houses all collection of various projects I've worked from Mutimedia programming class 
 
 ## Projects
-Coming Soon.
+ - [Cartoon](cartoon/index.html)
 ## Author
 - Bi Rong Liu (birong.liu75@bcmail.cuny.edu)
 
