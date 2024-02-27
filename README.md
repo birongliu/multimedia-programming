@@ -4,6 +4,7 @@ This repository houses all collection of various projects I've worked from Mutim
 
 ## Projects
  - [Cartoon](cartoon/index.html)
+
 ## Author
 - Bi Rong Liu (birong.liu75@bcmail.cuny.edu)
 
