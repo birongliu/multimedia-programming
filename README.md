@@ -1,6 +1,6 @@
 # CISC 3610 Multimedia Programming
 
-This repository houses all collection of various projects I've worked from Mutimedia programming class 
+This repository houses all collection of various projects I've worked from multimedia programming class 
 
 ## Projects
  - [Cartoon](cartoon/index.html)
