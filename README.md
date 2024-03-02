@@ -3,7 +3,7 @@
 This repository houses all collection of various projects I've worked from multimedia programming class 
 
 ## Projects
- - [Cartoon](cartoon/index.html)
+ - [Cartoon](projects/cartoon/index.html)
 
 ## Labs
  - Coming Soon
