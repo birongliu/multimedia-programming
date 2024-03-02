@@ -33,6 +33,7 @@ class Items {
     this.ctx.fill();
     this.ctx.closePath()
   }
+
   star() {
     let stars = [];
     for (let i = 0; i < 200; i++) {
@@ -42,8 +43,7 @@ class Items {
         radius: Math.sqrt(Math.random() * 4),
       };
     }
-    for (let i = 0; i < stars.length; i++) {
-      let star = stars[i];
+    for (const star of stars) {
       this.ctx.beginPath();
       this.ctx.arc(star.x, star.y, star.radius, 10, 2 * Math.PI);
       this.ctx.fillStyle = `rgba(255, 255, 255, 1})`;
