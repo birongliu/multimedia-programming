@@ -5,6 +5,9 @@ This repository houses all collection of various projects I've worked from multi
 ## Projects
  - [Cartoon](cartoon/index.html)
 
+## Labs
+ - Coming Soon
+
 ## Author
 - Bi Rong Liu (birong.liu75@bcmail.cuny.edu)
 
