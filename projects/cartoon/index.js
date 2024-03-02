@@ -50,6 +50,7 @@ class Items {
       this.ctx.closePath();
       this.ctx.fillStyle = "#bbb";
       this.ctx.fill();
+      this.ctx.closePath()
     }
   }
 }
