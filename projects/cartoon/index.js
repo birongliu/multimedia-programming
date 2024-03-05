@@ -100,7 +100,13 @@ class Cartoon {
     this.write("Cartoon", 140, 15, "blue");
     this.setGround();
     this.write("This cartoon has moon, houses, star.", 150, 90, "white", 12);
+    this.button();
     return this;
+  }
+
+  button() {
+    this.write("Click here to go back home", 150, 100, "black", 10);
+    this.canvas.onclick = () => window.location.assign("../../README.md");
   }
 
   setBackground(color) {
@@ -124,6 +130,7 @@ class Cartoon {
     this.items.moon(30, 20);
     this.items.star();
     this.items.house();
+    this.button();
   }
 }
 
