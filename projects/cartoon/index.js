@@ -106,7 +106,12 @@ class Cartoon {
 
   button() {
     this.write("Click here to go back home", 150, 100, "black", 10);
-    this.canvas.onclick = () => window.location.assign("../../");
+    this.canvas.onclick = (ctx) => {
+      console.log(ctx.clientY);
+      if (ctx.clientX >= 320 && ctx.clientY >= 308) {
+        window.location.replace("../../")
+      }
+    };
   }
 
   setBackground(color) {
