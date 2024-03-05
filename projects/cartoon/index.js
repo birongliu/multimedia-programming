@@ -106,7 +106,7 @@ class Cartoon {
 
   button() {
     this.write("Click here to go back home", 150, 100, "black", 10);
-    this.canvas.onclick = () => window.location.assign("../../README.md");
+    this.canvas.onclick = () => window.location.assign("/");
   }
 
   setBackground(color) {
