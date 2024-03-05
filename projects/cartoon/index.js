@@ -73,20 +73,6 @@ class Items {
       this.ctx.closePath();
     }
   }
-
-  button() {
-    this.ctx.beginPath();
-    this.ctx.rect(5, 111, 30, 10);
-    this.ctx.fillStyle = "rgba(225,225,225,0.5)";
-    this.ctx.fill();
-    this.ctx.lineWidth = 2;
-    this.ctx.strokeStyle = "#000000";
-    this.ctx.stroke();
-    this.ctx.closePath();
-    this.ctx.font = "40pt";
-    this.ctx.fillStyle = "#000000";
-    this.ctx.fillText("Start", 10, 120);
-  }
 }
 
 class Cartoon {
@@ -98,10 +84,9 @@ class Cartoon {
     ground: "#e9bf83",
   };
 
-  setTitle(title, x, y) {
-    this.context.font = "18px serif";
-    this.context.fillStyle = "blue";
-    this.context.textAlign = "center";
+  write(title, x, y, color, size = 18) {
+    this.context.font = `${size}px serif`;
+    (this.context.fillStyle = color), (this.context.textAlign = "center");
     this.context.fillText(title, x, y);
   }
 
@@ -112,7 +97,9 @@ class Cartoon {
     this.canvas = canvasDocs;
     this.items = new Items(this.canvas, this.context);
     this.setBackground(Cartoon.colors.night);
+    this.write("Cartoon", 140, 15, "blue");
     this.setGround();
+    this.write("This cartoon has moon, houses, star.", 150, 90, "white", 12);
     return this;
   }
 
@@ -137,11 +124,6 @@ class Cartoon {
     this.items.moon(30, 20);
     this.items.star();
     this.items.house();
-    this.items.button();
-    this.canvas.addEventListener("click", function (e) {
-      console.log(this.className); // logs the className of my_element
-      console.log(e.currentTarget === this); // logs `true`
-    });
   }
 }
 
