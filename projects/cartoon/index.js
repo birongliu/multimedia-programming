@@ -6,14 +6,6 @@ class Items {
     this.canvas = canvas;
   }
 
-  grass() {
-    ctx.beginPath();
-    ctx.moveTo(75, 50);
-    ctx.lineTo(100, 75);
-    ctx.lineTo(100, 25);
-    ctx.fill();
-  }
-
   house() {
     this.ctx.save();
     this.ctx.beginPath();
@@ -49,6 +41,7 @@ class Items {
     this.ctx.fillStyle = "white";
     this.ctx.fill();
     this.ctx.stroke();
+    this.ctx.restore();
   }
 
   moon(x, y) {
@@ -79,6 +72,20 @@ class Items {
       this.ctx.fill();
       this.ctx.closePath();
     }
+  }
+
+  button() {
+    this.ctx.beginPath();
+    this.ctx.rect(5, 111, 30, 10);
+    this.ctx.fillStyle = "rgba(225,225,225,0.5)";
+    this.ctx.fill();
+    this.ctx.lineWidth = 2;
+    this.ctx.strokeStyle = "#000000";
+    this.ctx.stroke();
+    this.ctx.closePath();
+    this.ctx.font = "40pt";
+    this.ctx.fillStyle = "#000000";
+    this.ctx.fillText("Start", 10, 120);
   }
 }
 
@@ -130,7 +137,11 @@ class Cartoon {
     this.items.moon(30, 20);
     this.items.star();
     this.items.house();
-    this.items.grass();
+    this.items.button();
+    this.canvas.addEventListener("click", function (e) {
+      console.log(this.className); // logs the className of my_element
+      console.log(e.currentTarget === this); // logs `true`
+    });
   }
 }
 
