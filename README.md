@@ -7,7 +7,7 @@ This repository houses all collection of various projects I've worked from multi
  - [Form](projects/forms/index.html)
 
 ## Labs
- - Coming Soon
+ - [Frult](labs/fruit/index.html)
 
 ## Author
 - Bi Rong Liu (birong.liu75@bcmail.cuny.edu)
