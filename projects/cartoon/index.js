@@ -105,11 +105,14 @@ class Cartoon {
   }
 
   button() {
-    this.write("Click here to go back home", 150, 100, "black", 10);
+    this.context.beginPath();
+    this.context.rect(90, 100, 120, 25);
+    this.context.fill();
+    this.context.closePath();
+    this.write("Click here to go back home", 150, 120, "black", 10);
     this.canvas.onclick = (ctx) => {
-      if (ctx.clientX >= 320 && ctx.clientY >= 308) {
-        window.location.replace("../../")
-      }
+      const rect = this.canvas.getBoundingClientRect();
+      console.log(ctx.clientX < 200);
     };
   }
 
