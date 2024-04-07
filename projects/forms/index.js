@@ -9,16 +9,12 @@ weightForm.onsubmit = (k) => {
 
 function calucateWeightUnit(weightUnit) {
   const weight = document.getElementById("weight").value;
-  switch (weightUnit.value) {
-    case "lb":
-      return calucatePound(weight);
-    case "oz":
-      return calucateOunce(weight);
-    case "g":
-      return calucateGram(weight);
-    default:
-      return weight;
+  const options = {
+    "lb": calucatePound(weight),
+    "oz": calucateOunce(weight),
+    "g": calucateGram(we)
   }
+  return options[weightUnit.value] ?? weight;
 }
 
 function calucateOunce(weight) {
