@@ -9,6 +9,7 @@ This repository houses all collection of various projects I've worked from multi
 ## Labs
  - [Frult](labs/fruit/index.html)
  - [Audio](labs/audio/index.html)
+ - [Resume](labs/resume/index.html)
 
 ## Author
 - Bi Rong Liu (birong.liu75@bcmail.cuny.edu)
