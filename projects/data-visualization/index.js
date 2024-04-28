@@ -8,6 +8,17 @@ const getData = async () => {
   return { employments, industries, context: data };
 };
 
+const mergeData = async (employments, industries) => {
+  let arr = [];
+  for (let i = 0; i < 10; i++) {
+    arr[i] = {
+      data: [employments[i]],
+      label: industries[i],
+      backgroundColor: randomColor(),
+    };
+  }
+  return arr;
+};
 
 const randomColor = () => {
   const r = Math.floor(Math.random() * 200); 
