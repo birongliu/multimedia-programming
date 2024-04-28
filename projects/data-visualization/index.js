@@ -8,37 +8,17 @@ const getData = async () => {
   return { employments, industries, context: data };
 };
 
-const mergeData = async (employments, industries) => {
-  let arr = [];
-  for (let i = 0; i < 10; i++) {
-    arr[i] = {
-      data: [employments[i]],
-      label: industries[i],
-      backgroundColor: randomColor(),
-    };
-  }
-  return arr;
-};
-/**
- * [
-        {
-          label: "Employment (millions)",
-          backgroundColor: ["#3e95cd"],
-          data: employments,
-        },
-      ],
- */
 
 const randomColor = () => {
-  const r = Math.floor(Math.random() * 200); // Pick a random number between 0 and 255
-  const g = Math.floor(Math.random() * 200); // Pick a random number between 0 and 255
-  const b = Math.floor(Math.random() * 200); // Pick a random number between 0 and 255
-  const a = Math.random().toFixed(1); // Pick a random number between 0 and 1 with 1 decimal place
+  const r = Math.floor(Math.random() * 200); 
+  const g = Math.floor(Math.random() * 200); 
+  const b = Math.floor(Math.random() * 200);
+  const a = Math.random().toFixed(1);
   return `rgba(${r},${g},${b},${a})`;
 };
 
 const createChart = async () => {
-  let { employments, industries, context } = await getData();
+  let { employments, industries } = await getData();
   let data = await mergeData(employments, industries);
   new Chart(document.getElementById("bar-chart"), {
     type: "bar",
