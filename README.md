@@ -5,6 +5,7 @@ This repository houses all collection of various projects I've worked from multi
 ## Projects
  - [Cartoon](projects/cartoon/index.html)
  - [Form](projects/forms/index.html)
+ - [Data-Visualization](projects/data-visualization/index.html)
 
 ## Labs
  - [Frult](labs/fruit/index.html)
