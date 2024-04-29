@@ -1,5 +1,14 @@
 {
     "name": "Form Progressive Web Application",
     "short_name": "FPWA",
-    "start_url": "."
+    "start_url": ".",
+    "icons": [{
+        "src": "weight.png",
+        "sizes": "512x512",
+        "type": "image/png"
+    }],
+    "orientation": "portrait",
+    "theme_color": "#F5F5DC",
+    "description": "an form app that compute weight",
+    "display": "standalone"
 }
