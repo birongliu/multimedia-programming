@@ -12,7 +12,7 @@ function calucateWeightUnit(weightUnit) {
   const options = {
     "lb": calucatePound(weight),
     "oz": calucateOunce(weight),
-    "g": calucateGram(we)
+    "g": calucateGram(weight)
   }
   return options[weightUnit.value] ?? weight;
 }
