@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="manifest" href="./manifest.json"></link>
+    <link rel="stylesheet" href="./index.css"></link>
+</head>
+<body>
+    <h1>Weight Converter</h1>
+    <form id="weightForm" style="display: inline-block;">
+        <div> 
+        <label for="weight">Weight:</label>
+        <input required inputmode="numeric" min="1" type="number" id="weight" class="form-control" placeholder="Enter your weight">
+        </div>
+        <label for="weightUnit">Unit:</label>
+        <select id="weightUnit" class="form-control">
+            <option value="kg">Kilograms</option>
+            <option value="lb">Pounds</option>
+            <option value="oz">Ounces</option>
+            <option value="g">Grams</option>
+        </select>
+        <button id="btn" type="submit" form="weightForm" style="margin-top: 10px;">Submit</button>
+    </form>  
+    <p id="output"></p>
+    <script src="./index.js" ></script>
+</body>
+</html>
