@@ -7,6 +7,7 @@ This repository houses all collection of various projects I've worked from multi
  - [Form](projects/forms/index.html)
  - [Wickeditor](projects/wickeditor/index.html)
  - [Data-Visualization](projects/data-visualization/index.html)
+ - [PWA](projects/pwa/index.html)
 
 ## Labs
  - [Frult](labs/fruit/index.html)
