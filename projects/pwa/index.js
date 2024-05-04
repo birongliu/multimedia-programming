@@ -4,7 +4,7 @@ weightForm.onsubmit = (k) => {
   k.preventDefault();
   const weightUnit = document.getElementById("weightUnit");
   const outcome = calucateWeightUnit(weightUnit);
-  result.innerHTML = `Result: ${outcome}${weightUnit.value}`;
+  result.textContent = `Result: ${outcome}${weightUnit.value}`;
 };
 
 function calucateWeightUnit(weightUnit) {

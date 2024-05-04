@@ -112,7 +112,7 @@ class Cartoon {
     this.write("Click here to go back home", 150, 120, "black", 10);
     this.canvas.onclick = (ctx) => {
       const rect = this.canvas.getBoundingClientRect();
-      console.log(ctx.clientX < 200);
+      console.log(ctx.clientX);
     };
   }
 
