@@ -7,7 +7,7 @@ This repository houses all collection of various projects I've worked from multi
  - [Form](projects/forms/index.html)
  - [Wickeditor](projects/wickeditor/index.html)
  - [Data-Visualization](projects/data-visualization/index.html)
- - [Video-animation](projects/video-animation/index.html) [Source code for wick](projects/video-animation/project.wick)
+ - [Video-animation](projects/video-animation/index.html) [[Downloadable wick file](projects/video-animation/project.wick)]
  - [PWA](projects/pwa/index.html)
 
 ## Labs
