@@ -8,12 +8,13 @@ This repository houses all collection of various projects I've worked from multi
  - [Wickeditor](projects/wickeditor/index.html)
  - [Data-Visualization](projects/data-visualization/index.html)
  - [Video-animation](projects/video-animation/index.html) [[Downloadable wick file](projects/video-animation/project.wick)]
+ - [Cartoon-animated](projects/cartoon-animation/index.html)
  - [PWA](projects/pwa/index.html)
 
 ## Labs
  - [Frult](labs/fruit/index.html)
  - [Audio](labs/audio/index.html)
-  - [Bootstrap](labs/bootstrap/index.html)
+ - [Bootstrap](labs/bootstrap/index.html)
  - [Resume](labs/resume/index.html)
 
 ## Author
