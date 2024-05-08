@@ -13,6 +13,7 @@ This repository houses all collection of various projects I've worked from multi
 ## Labs
  - [Frult](labs/fruit/index.html)
  - [Audio](labs/audio/index.html)
+  - [Bootstrap](labs/bootstrap/index.html)
  - [Resume](labs/resume/index.html)
 
 ## Author
